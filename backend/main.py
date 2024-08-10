@@ -9,7 +9,8 @@ from flask_cors import CORS
 
 # Constants
 SELECTED_FEATURES = ['genres', 'keywords', 'tagline', 'cast', 'director']
-CSV_FILE_PATH = os.path.join('backend', 'movies.csv')
+CSV_FILE_PATH = 'movies.csv'
+
 NUM_RECOMMENDATIONS = 10
 
 # Initialize Flask app
