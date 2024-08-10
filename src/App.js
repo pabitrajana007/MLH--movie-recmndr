@@ -10,7 +10,7 @@ function App() {
     const getRecommendations = async () => {
         try {
             setError('');
-            const response = await axios.post('http://localhost:5000/recommend', {
+            const response = await axios.post('https://mlh-movie-recmndr.onrender.com/recommend', {  // Updated URL
                 movie_name: movieName
             });
             setRecommendations(response.data.recommendations);
