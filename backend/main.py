@@ -9,8 +9,7 @@ from flask_cors import CORS
 
 # Constants
 SELECTED_FEATURES = ['genres', 'keywords', 'tagline', 'cast', 'director']
-CSV_FILE_PATH = 'movies.csv'
-
+CSV_FILE_PATH = os.path.join('backend', 'movies.csv')
 NUM_RECOMMENDATIONS = 10
 
 # Initialize Flask app
@@ -77,5 +76,4 @@ if __name__ == "__main__":
     similarity = cosine_similarity(feature_vectors)
     
     # Run Flask app
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True, port=5000)
