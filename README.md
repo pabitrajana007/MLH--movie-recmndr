@@ -33,7 +33,8 @@ This project demonstrates a simple yet effective movie recommendation system. Us
 - **Data:** Movie dataset in CSV format
 
 
-1. **Navigate to the Backend Directory:**
+## Available Scripts - Run Backend
+
 Run main.py
 
 ## Available Scripts - Run Frontend
